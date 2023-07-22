@@ -1,0 +1,15 @@
+﻿
+@model Retirement
+
+<h2>Retirement Info</h2>
+
+@if (Model != null)
+{
+    <p>Can Retire: @Model.CanRetire</p>
+    <p>Benefits: @Model.Benefits</p>
+}
+else
+{
+    <p>No employee found with the specified Id.</p>
+}
+
